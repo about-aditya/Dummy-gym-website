@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checking your health</title>
+  <link rel="stylesheet" href="./css/fitcalculator.css">
+  <script src="./js/fitcalculator.js ">
+  </script>
+</head>
+
+
+
+<body>
+
+  <nav class="navbar background h-nav-res">
+    <div id="logo">
+      <img src=".//img/gymlog.png" alt="ERROR!">
+    </div>
+    <ul class="navlist v-class-res">
+      <li><a href="Homepage.html">HOME</a> </li>
+      <li><a href="aboutus.html">ABOUT US</a> </li>
+      <li><a href="check.html">FITNESS CHECKUP</a> </li>
+      <li><a href="fitcalculator.html">FITNESS CALCULATOR</a> </li>
+      <li><a href="dietplan.html" blank>DIET PLAN </a></li>
+      <li><a href="contacts.html">CONTACT US </a></li>
+    </ul>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+  </nav>
+
+  <div class="container">
+
+    <div class="wrapper">
+      <div class="hr">
+        <hr>
+        <h2><b> WELCOME TO YOUR SELF HEALTH EVOLUTION </b></h2>
+        <hr>
+      </div><br><br>
+      <img src="./img/scale.jpeg.jpeg" alt="img"><br><br>
+
+      <p class="mission-txt">
+      <h3><b>"In our Indian society we usually taken our health as least priority , in future which leads to several
+          complication so here are some simple
+          measuring techniques by which you can measure different body composition by just sitting at your home
+          There are many different techniques by which we can measure our own health
+          some of which are mentioned below"</p><br><br>
+
+    </div>
+
+    <div class="wrapper">
+      <table style="width: 100%">
+        <tr>
+          <th>
+            <h2><b>--TOP 5 MEASURE FOR BODY FAT--</b></h2>
+          </th>
+        </tr>
+        <tr>
+          <td>-->BODY MASS INDEX</td>
+        </tr>
+        <tr>
+          <td>-->RELATIVE FAT MASS </td>
+        </tr>
+        <tr>
+          <td>-->BODY ADIPOSITY INDEX </td>
+        </tr>
+        <tr>
+          <td>-->WAIST CIRCUMFERENCE </td>
+        </tr>
+        <tr>
+          <td>-->WAIST-TO-HIP RATIO </td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="wrapper"><br>
+      <div class="hr">
+        <hr>
+        <h2> <b> BMI CALCULATOR </b></h2>
+        <hr>
+      </div><br><br>
+
+      <p>
+      <h2><b>BMI is a measurement of a person's leanness or corpulence based on height and weight and is intended to
+          quantify tissue mass it is
+          widely used as a general indicator of whether a person has a healthy body weight for their height</b>
+      </h2>
+      </p><br>
+
+      <p>Enter your height: <input type="text" id="height" />
+        <select type="multiple" id="heightunits">
+          <option value="centimetres" selected="selected">centimetres</option>
+          <option value="inches">inches</option>
+        </select>
+      </p>
+      <p>Enter your weight: <input type="text" id="weight" />
+        <select type="multiple" id="weightunits">
+          <option value="kg" selected="selected">kilograms</option>
+          <option value="lb">pounds</option>
+        </select>
+      </p>
+      <div class="btn"><input type="submit" value="computeBMI" onclick="calbmi();"></div>
+      <h1>Your BMI is: <span id="output"></span></h1>
+
+      <h2><b>This means you are: <span id="comment"></b> </span> </h2>
+      <div class="unit">
+        <img src="./img/bmichart.jpeg.jpeg" alt="BMI chart" style="width:400px;height:300px ;">
+      </div>
+    </div>
+
+
+
+    <div class="wrapper"><br>
+      <div class="hr">
+        <hr>
+        <h2><b> RFM CALCULATOR </b></h2>
+        <hr>
+      </div><br><br>
+      <h2> <b>Unlike BMI, RFM doesn't use your weight in the calculation. Instead, it counts the distance around your
+          waist (waist circumference) and your height.</b> </h2>
+      <p>Enter your height: <input type="text" id="height" placeholder="in cm" /></p>
+      <p>Enter your waist: <input type="text" id="waist" placeholder="in cm" /></p>
+      <p>Please select your Gender :</p>
+      <input type="radio" id="male" name="Gender" value="male">
+      <label for="Male">MALE</label><br>
+      <input type="radio" id="Female" name="Gender" value="Female">
+      <label for="Female">FEMALE</label><br>
+      <div class="btn"><input type="submit" value="computeRFM" onclick="calrfm();"></div>
+      <h1>
+        <p id="output2"></p>
+      </h1>
+      <div class="unit">
+        <img src="./img/rfm.jpeg.jpeg" alt="RFM chart" style="width:400px;height:300px;">
+      </div>
+    </div>
+
+
+    <div class="wrapper"><br>
+      <div class="hr">
+        <hr>
+        <h2> <b> BAI CALCULATOR </b></h2>
+        <hr>
+      </div><br><br>
+      <h2><b> The body adiposity index (BAI) is a method of estimating the amount of body fat in humans. The BAI is
+          calculated without using body weight, unlike the body mass index (BMI). Instead, it uses the size of the hips
+          compared to the person's height.</b> </h2>
+      <p>ENTER YOUR HEIGHT (in m) :</p>
+      <input type="text" id="height2" placeholder="in m">
+      <p>ENTER YOUR HIP CIRCUMFERENCE (in cm) :</p>
+      <input type="text" id="hip2" placeholder="in cm">
+      <div class="btn"><input type="submit" value="computeBAI" onclick="calbai();"></div>
+      <h1>Your BAI is: <p id="output3"></p>
+      </h1>
+      <div class="unit">
+        <img src="./img/bai.jpeg.jpeg" alt="BAI chart" style="width:400px;height:300px;">
+      </div>
+    </div>
+
+    <div class="wrapper"><br>
+      <div class="hr">
+        <hr>
+        <h2> <b> WAIST CIRCUMFERENCE(WC) CALCULATOR </b></h2>
+        <hr>
+      </div><br><br>
+
+      <h2> <b> Waist circumference is the measurement taken around the abdomen at the level of the umbilicus (belly
+          button). Health experts commonly use waist measurement to screen patients for possible weight-related health
+          problems.</b> </h2>
+      <p>Step to follow to correctly measure waist circumference</p>
+      <p> -> Stand and place a tape measure around your middle, just above your hipbones<br>
+        -> Make sure tape is horizontal around the waist<br>
+        -> Keep the tape snug around the waist, but not compressing the skin<br>
+        -> Measure your waist just after you breathe out</p>
+      <div class="unit">
+        <img src="./img/wc.jpeg.jpeg" alt="WC chart" style="width:400px;height:300px;">
+      </div>
+    </div>
+
+    <div class="wrapper"><br>
+      <div class="hr">
+        <hr>
+        <h2><b> WAIST TO HIP RATIO(WHR) CALCULATOR </b></h2>
+        <hr>
+      </div><br><br>
+      <h2> <b> The waist–hip ratio or waist-to-hip ratio (WHR) is the dimensionless ratio of the circumference of the
+          waist to that of the hips. This is calculated as waist measurement divided by hip measurement (W⁄H). For
+          example, a person with a 30″ (76 cm) waist and 38″ (97 cm) hips has a waist–hip ratio of about 0.78.
+          The WHR has been used as an indicator or measure of health, fertility, and the risk of developing serious
+          health conditions. WHR correlates with perceptions of physical attractiveness.</b> </h2>
+      <p>ENTER YOUR WAIST CIRCUMFERENCE (in cm) :</p>
+      <input type="text" id="waist" placeholder="in cm">
+      <p>ENTER YOUR HIP CIRCUMFERENCE (in cm) :</p>
+      <input type="text" id="hip1" placeholder="in cm">
+      <div class="btn"> <input type="submit" value="computeWH" onclick="calwh();"></div>
+      <h1>Your WHR is: <p id="output4"></p>
+      </h1>
+      <div class="unit">
+        <img src="./img/wh.jpeg.jpeg" alt="BMI chart" style="width:400px;height:300px;">
+      </div>
+    </div>
+
+
+    <div class="wrapper"><br>
+      <div class="hr">
+        <hr>
+        <h2><b> Reasons Why Regular Health Check is Important </b></h2>
+        <hr>
+      </div><br><br>
+
+      <p><b>--Prevent health issues – for instance, if you do a routine check-up of sugar and cholesterol, you will know
+          how likely you are to get diabetes/ cholesterol in the future.<br> --This is because, if you are at the
+          borderline, doctors advise you to control your sugar intake. Hence, you can have control over your health.<br>
+          --Lower health care costs – A regular health check-up can save your money in the long run.<br> --Also,
+          preventive health check-ups can reduce the risk of undergoing surgeries and other chronic medical
+          conditions.<br>
+          --Eliminates further growth of disease - cancer is a disease where if you identify it later, it can be hard to
+          diagnose.<br>-- Doing a regular body check-up can help doctors diagnose a disease before it poses high
+          risk.<br>
+          --Reduces the risk of complication during treatment – once you are diagnosed with a health condition at an
+          early stage, the complexity and risk involved are less when compared to diagnosing at a very late stage<br>.--
+          A regular check-up can help in recovering your body from any health concerns.<br>
+          --Increases life span – by doing a regular check-up of your body and health, you can be assured of how healthy
+          you are.<br> --By taking the preventive advice from the doctor and following the doctor's prescriptions can
+          increase your lifespan as well.<br>
+          --Regular check-ups with specific tests can vary depending on age, gender, family history, and overall
+          health.<br> --Many of us, including our previous generation, hesitate to do a routine medical check-up.<br>
+          --But through a preventive health check-up, you realize that you are healthy, which in turn offers peace of
+          mind<br>.</p></b>
+
+          <footer>
+            <p class="textfooter">Copyright &copy; 2029-www.BodyFlex.com- All rights reserved</p>
+          </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,749 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  
+}
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 25px;
+    margin: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+}
+/* Navigation bar logo and img  */
+#logo{
+    margin: 10px 10px
+}
+#logo img{
+  margin: 2px 5px;
+  height: 50px;
+  filter: invert(100%);
+  
+}
+
+/* Navigation bar Listing */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.navlist{
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+
+}
+.navlist li{
+    display: flex;
+    list-style: none;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navlist  li a{
+    color: white;
+    /* padding: 3px 15px; */
+    display: block;
+    text-decoration: none;
+}
+
+.navlist  li a:hover {
+    /* color:darkgray; */
+    color: #28a7e9;
+    font-weight: 500;
+  
+
+}
+
+/* .rightNav{
+    background-color: yellow;
+    width: 40%;
+    text-align: right;
+} */
+
+.btn{
+    margin: 26px 10px;
+    background-color: black;
+    color: white ;
+    padding: 4px 10px;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: gray;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.8) url('../img/w6.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
+.right{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 23px;
+}
+
+/* SEction part  */
+.box-main{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    font-size: 70px;
+    height: 80%;
+}
+.firstsection{
+    height: 100vh;
+}
+#d{
+    color: orangered;
+}
+
+.firsthalf{
+    padding: 20px 87px;
+    
+}
+.btnj{
+    padding: 10px 30px;
+    margin: 0px;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: 2px solid white;
+    border-radius: 7px;
+   
+}
+
+.btnj a{
+    list-style: none;
+    text-decoration:none;
+    color:white
+}
+.btnj a:hover{
+    color: darkgray;
+}
+
+/* Second section Content */
+
+.secondsection{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    /* margin: 100px  25px; */
+    align-items: left;
+    justify-content: left;
+    color: white;
+    background: #121213;
+    /* background: url('../img/section-2.jpg') no-repeat center center/cover; */
+}
+
+/* .back{
+    background: #1a1c1d ;
+    background-blend-mode: darken;
+    background-size: 10000px;
+} */
+
+.process{
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 150px 70px;
+    margin-bottom: 0px;
+  
+    
+  
+}
+.processtextbig{
+    font-size: 45px;
+    margin: 2px 70px;
+    color: #28a7e9;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subprocess{
+    font-size: 19.7px;
+    margin: 28px 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.thumbnail{
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: white;
+    list-style: none;
+  
+
+}
+
+.thumbnail li {
+    display: flex;
+    list-style: none;
+    padding: 10px 0px;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 80px;
+    color: white;
+    font-weight: bold;
+    border-style: solid;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 2px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-color: #28a7e9;
+    
+
+   
+
+}
+
+.thumbnail li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    
+   
+
+}
+
+
+.thumbnail li a:hover {
+    color: #28a7e9;
+  }
+
+
+
+.basiccrossfit img{
+    height: 290px;
+    width: 400px;
+    margin: 20px 70px;
+    padding: 50px 10px;
+    border: 2px solid transparent;
+    border-radius: 200px;
+}
+
+.crossfit{
+    float:right;
+    justify-content: left;
+    background-color: #28a7e9;
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 100px 150px;
+    margin: 0px 20px;
+    margin-top: 70px;
+    max-width: 2500px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    
+}
+
+strong{
+    cursor: pointer;
+    color: black;
+}
+
+strong:hover{
+    color:#1a1c1d;
+}
+
+#subcross{
+    font-size: 20px;
+    font-family: serif;
+}
+
+.fitnessstudio img{
+    float: right;
+    height: 290px;
+    width: 400px;
+    margin: 20px 70px;
+    padding: 50px 10px;
+    border: 2px solid transparent;
+    border-radius: 200px;
+
+}
+
+
+.studio{
+    float: left;
+    justify-content: left;
+    background-color: #28a7e9;
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 100px 150px;
+    margin: 0px 20px;
+    margin-top: 70px;
+    max-width: 2500px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+#subfitness{
+    font-size: 20px;
+    font-family: serif;
+}
+
+.yogaclasses img{
+    height: 290px;
+    width: 400px;
+    margin: 20px 70px;
+    padding: 50px 10px;
+    border: 2px solid transparent;
+    border-radius: 200px;
+}
+
+.yclasses{
+    float:right;
+    justify-content: left;
+    background-color: #28a7e9;
+    color: white;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 100px 190px;
+    margin: 0px 20px;
+    margin-top: 70px;
+    max-width: 2500px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    
+}
+
+#subyoga {
+    font-size: 20px;
+    font-family: serif;
+}
+
+/* Third section Content */
+
+
+.thirdsection{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    /* margin: 100px  25px; */
+    align-items: left;
+    justify-content: left;
+    color: white;
+    background: rgba(0, 0, 0, 0.8) url('../img/section-2.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+.content{
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 150px 70px;
+    margin-bottom: 0px;
+  
+    
+  
+}
+.contenttextbig{
+    font-size: 45px;
+    margin: 2px 70px;
+    color: #28a7e9;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subcontent{
+    font-size: 25px;
+    margin: 28px 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Coaches section  */
+
+
+.coaches{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    /* margin: 100px  25px; */
+    align-items: center;
+    justify-content: left;
+    color: white;
+    background: #0f0f0f;
+    /* background: url('../img/section-2.jpg') no-repeat center center/cover; */
+}
+
+
+.coachestextbig{
+    font-size: 45px;
+    margin: 2px 10px;
+    margin-top: 100px;
+    color: #28a7e9;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subcoaches{
+    font-size: 20px;
+    margin: 28px 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.trainers img{
+    height: 300px;
+    width: 250px;
+    float: left;
+    display:flex;
+    /* align-items: left;
+    justify-content: left; */
+    margin-top: 20px;
+}
+
+.train{
+    float:right;
+    justify-content: left;
+    background-color: #28a7e9;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 60px 40px;
+    margin: 0px 20px;
+    margin-top: 20px;
+    max-width: 400px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    
+}
+#subtrainer1{
+    font-size: 20px;
+}
+
+#t1{
+    font-size: 16px;
+    color: white;
+}
+
+.trainers2 img{
+    height: 300px;
+    width: 250px;
+}
+
+.train2{
+    float:right;
+    justify-content: right;
+    background-color: #28a7e9;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 74px 50px;
+    margin: 0px 20px;
+    margin-top: 20px;
+    max-width: 400px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    
+}
+#subtrainer2{
+    font-size: 20px;
+}
+
+#t2{
+    font-size: 16px;
+    color: white;
+}
+
+.trainers3 img{
+    height: 300px;
+    width: 250px;
+    float: left;
+    display: flex;
+}
+
+.train3{
+    float:right;
+    justify-content: right;
+    background-color: #28a7e9;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 74px 45px;
+    margin: 0px 20px;
+    margin-top: 20px;
+    max-width: 400px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    
+}
+#subtrainer3{
+    font-size: 20px;
+}
+
+#t3{
+    font-size: 16px;
+    color: white;
+}
+
+.trainers4 img{
+    height: 300px;
+    width: 250px;
+}
+
+.train4{
+    float:right;
+    justify-content: right;
+    background-color: #28a7e9;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 75px 49px;
+    margin: 0px 20px;
+    margin-top: 20px;
+    max-width: 400px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    
+}
+#subtrainer4{
+    font-size: 20px;
+}
+
+#t4{
+    font-size: 16px;
+    color: white;
+}
+
+/* Fouth section  */
+.fourthsection{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    /* margin: 100px  25px; */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background:#252a30;
+    background-size: cover;
+    background-blend-mode: darken;
+    opacity: 2;
+}
+
+
+.review{
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:80px 70px;
+    margin-bottom: 0px;
+  
+    
+  
+}
+.reviewtextbig{
+    font-size: 45px;
+    margin: 2px 70px;
+    color: #28a7e9;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subreview{
+    font-size: 25px;
+    margin: 28px 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.client img{
+    height: 100px;
+    width: 100px;
+    border: 2px solid transparent;
+    border-radius: 80px;
+}
+
+.btnf{
+ padding: 8px 15px;
+ margin-top: 40px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: 18px;
+ 
+ background-color: transparent;
+ border: 2px solid white;
+ border-radius: 8px;
+
+}
+
+.btnf a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.btnf a:hover{
+    color: #28a7e9;
+}
+/* FOOTER  */
+.textfooter{
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #080808;
+}
+/* Responsiveness */
+
+.burger{
+    display: none;
+   position: absolute;
+   cursor: pointer;
+   right: 3%;
+   top: 15px;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 4px;
+}
+
+@media only screen and (max-width:1100px){
+    .navlist{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+        height: 280px;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-res{
+        height: 62px;
+    }
+    .v-class-res{
+        opacity: 0;
+    }
+
+    .processtextbig{
+        align-items: left;
+        justify-content: left;
+    }
+    .subprocess{
+        align-items: center;
+        justify-content: center;
+    }
+    .firstsection{
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+       
+    }
+    .btnj{
+        margin-bottom: 120px;
+    }
+    .secondsection{
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+      
+    }
+
+    .basiccrossfit img{
+       justify-content: center;
+       align-items: center;
+       margin-left:0px;
+       width: 300px;
+       height: 200px;
+    }
+
+    .fitnessstudio img{
+        justify-content: center;
+        align-items: center;
+        margin-left:10px;
+        width: 300px;
+        height: 200px;
+     }
+
+     .yogaclasses img{
+        justify-content: center;
+        align-items: center;
+        margin-left:0px;
+        width: 300px;
+        height: 200px;
+     }
+     .thumbnail{
+         width: 50%;
+         flex-direction: column;
+        margin: 2px;
+        
+     }
+    .crossfit{
+        width: 100px;
+        height: 100%;
+        padding: 50px 50px;
+        margin: 3px 85px;
+    }
+
+    .studio{
+        width: 100px;
+        height: 100%;
+        padding: 50px 50px;
+        margin: 3px 85px;
+    }
+
+    .yclasses{
+        width: 100px;
+        height: 100%;
+        padding: 50px 50px;
+        margin: 3px 85px;
+        margin-bottom: 100px;
+    }
+   
+    .thirdsection{
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+      
+    }
+
+    .subcontent{
+        margin-bottom: 130px;
+    }
+
+    .fourthsection{
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+      
+    }
+    .trainers4{
+        margin-bottom: 150px;
+    }
+
+    .textfooter{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+
+}

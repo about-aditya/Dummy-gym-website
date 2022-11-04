@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <nav   class="navbar background h-nav-res">
+      <div id="logo">
+        <img src=".//img/gymlog.png" alt="ERROR!">
+      </div>
+      <ul class="navlist v-class-res">
+        <li><a href="Homepage.html" >HOME</a> </li>
+        <li><a href="aboutus.html">ABOUT US</a> </li>
+        <li><a href="check.html">FITNESS CHECKUP</a> </li>
+        <li><a href="fitcalculator.html">FITNESS CALCULATOR</a> </li>
+        <li><a href="dietplan.html" blank>DIET PLAN </a></li>
+        <li><a href="contacts.html">CONTACT US </a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      
+    </nav>
+    <link rel="stylesheet" href="./css/check.css" />
+    <div class="container">
+      <div class="top">
+        <h1>FITNESS CHECK -> KNOW YOUR LEVEL WITH US!!</h1><br><br>
+        <h2>
+          Not sure if you're ready to level up?<br />
+          Figure out how fit you are in terms of cardio, strength, core and
+          flexibility.
+        </h2><br><br>
+        <a href="#open-modal"
+          ><button type="button" class="check">CRITERIA</button></a
+        >
+        <div id="open-modal" class="modal-window">
+          <div>
+            <a href="#modal-close" title="Close" class="modal-close"
+              >&times;<br
+            /></a>
+
+            <div class="criteria">
+              <br /><br />
+              <h1 class="c">CRITERIA BEHIND FITNESS CHECK</h1>
+              <div class="cardio">
+                <h1>CARDIO</h1>
+                <table width="100%">
+                  <tr>
+                    <th>BEAT IN 60 Seconds</th>
+                    <th>Result</th>
+                  </tr>
+                  <tr>
+                    <td>Less than 60</td>
+                    <td>LOW</td>
+                  </tr>
+                  <tr>
+                    <td>60-100</td>
+                    <td>NORMAL</td>
+                  </tr>
+                  <tr>
+                    <td>More than 100</td>
+                    <td>HIGH</td>
+                  </tr>
+                </table>
+                <br /><br />
+              </div>
+              <div class="strength">
+                <h1>STRENGTH</h1>
+                <table width="100%">
+                  <tr>
+                    <th>MALE &male;</th>
+                    <th>FEMALE &female;</th>
+                  </tr>
+                  <tr>
+                    <td>0-20 : BEGINNER</td>
+                    <td>0-10 : BEGINNER</td>
+                  </tr>
+                  <tr>
+                    <td>21-30 : INTERMEDIATE</td>
+                    <td>11-20 : INTERMEDIATE</td>
+                  </tr>
+                  <tr>
+                    <td>More than 31 : ADVANCED</td>
+                    <td>More than 21 : ADVANCED</td>
+                  </tr>
+                </table>
+                <br /><br />
+              </div>
+              <div class="core">
+                <h1>CORE STRENGTH</h1>
+                <table width="100%">
+                  <tr>
+                    <th>MALE &male;</th>
+                    <th>FEMALE &female;</th>
+                  </tr>
+                  <tr>
+                    <td>0-35 : BEGINNER</td>
+                    <td>0-20 : BEGINNER</td>
+                  </tr>
+                  <tr>
+                    <td>36-45 : INTERMEDIATE</td>
+                    <td>21-35 : INTERMEDIATE</td>
+                  </tr>
+                  <tr>
+                    <td>More than 45 : ADVANCED</td>
+                    <td>More than 35 : ADVANCED</td>
+                  </tr>
+                </table>
+                <br /><br />
+              </div>
+              <div class="flexibility">
+                <h1>FLEXIBILITY</h1>
+                <table width="100%">
+                  <tr>
+                    <th>-GIVEN POSITION-</th>
+                    <th>-YOUR POSITION-</th>
+                  </tr>
+                  <tr>
+                    <td>FIRST</td>
+                    <td>BEGINNER</td>
+                  </tr>
+                  <tr>
+                    <td>SECOND</td>
+                    <td>INTERMEDIATE</td>
+                  </tr>
+                  <tr>
+                    <td>THIRD</td>
+                    <td>ADVANCED</td>
+                  </tr>
+                </table>
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="first">
+        <h1>CARDIO</h1><br><br><br>
+        <table width="100%">
+          <tr>
+            <th>
+              <iframe
+                height="300"
+                width="400"
+                src="https://www.youtube.com/embed/oAjnlDZH9H8?start=7"
+                frameborder="10"
+              >
+              </iframe>
+              <br /><br />
+            </th>
+            <th>
+              <h2>
+                Measure your resting heart rate for 15 seconds to check your
+                cardio health and record your result.<br /><br />
+                <label for="beats"><b>Number of beats -</b> </label>
+                <input type="number" id="beats" name="cardio" /><br /><br />
+                <button type="button" class="check" onclick="myFunction1()">
+                  CHECK NOW
+                </button>
+              </h2>
+            </th>
+          </tr>
+        </table>
+        <p id="demo1"></p>
+      </div>
+
+      <div class="row" id="second">
+        <h1>STRENGTH</h1><br>
+        <table width="100%">
+          <tr>
+            <th width="100%">
+              <iframe
+                height="300"
+                width="400"
+                src="https://www.youtube.com/embed/WnjCelKlcOw"
+                frameborder="10"
+              >
+              </iframe>
+              <br /><br />
+            </th>
+            <th>
+              <h2>
+                Measure your strength by performing as many standard push-ups as
+                you can in 60 seconds and record your your result.<br /><br />
+                <label for="idGE" name="GENDER">GENDER - </label>
+                <label for="idGE" name="GENDER"> MALE &male;</label>
+                <input type="radio" name="GENDER" id="male2" />
+                <label for="idGE" name="GENDER"> FEMALE &female; </label>
+                <input type="radio" name="GENDER" id="female2" />
+                <br /><br />
+                <label for="pushup"><b>Number of Push up -</b> </label>
+                <input type="number" id="pushup" name="strength" /><br /><br />
+                <button type="button" class="check" onclick="myFunction2()">
+                  CHECK NOW
+                </button>
+              </h2>
+            </th>
+          </tr>
+        </table>
+        <p id="demo2"></p>
+      </div>
+
+      <div class="row" id="third">
+        <h1>CORE STRENGTH</h1><br>
+        <table width="100%">
+          <tr>
+            <th>
+              <iframe
+                height="300"
+                width="400"
+                src="https://www.youtube.com/embed/zoL7eingzkQ"
+                frameborder="10"
+              >
+              </iframe>
+              <br /><br />
+            </th>
+            <th>
+              <h2>
+                Measure your strength by performing as many standard sit-ups as
+                you can in 60 seconds and don't forgrt to record your your
+                result.<br /><br />
+                <label for="idGE" name="GENDER">GENDER - </label>
+                <label for="idGE" name="GENDER"> MALE &male; </label>
+                <input type="radio" name="GENDER" id="male3" />
+                <label for="idGE" name="GENDER"> FEMALE &female; </label>
+                <input type="radio" name="GENDER" id="female3" />
+                <br /><br />
+                <label for="situp"><b>Number of Sit up -</b> </label>
+                <input type="number" id="situp" name="core" /><br /><br />
+                <button type="button" class="check" onclick="myFunction3()">
+                  CHECK NOW
+                </button>
+              </h2>
+            </th>
+          </tr>
+        </table>
+        <p id="demo3"></p>
+      </div>
+
+      <div class="row" id="fourth">
+        <h1>FLEXIBILITY</h1><br>
+        <h2>
+          Standing with straight legs, reach down and try to touch your toes.
+          Hold your lowest position for 3 seconds and choose from the given
+          position.
+        </h2>
+        <table width="100%">
+          <tr>
+            <th>
+              <img src="./img/toe3.jpg" height="300" width="140" class="center" />
+            </th>
+            <th>
+              <img src="./img/toe1.jpg" height="300" width="140" class="center" />
+            </th>
+            <th>
+              <img src="./img/toe2.jpg" height="300" width="140" class="center" />
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <input type="radio" name="flex" id="1" />
+              <label for="" name="flex"> A </label>
+            </th>
+            <br />
+            <th>
+              <input type="radio" name="flex" id="2" />
+              <label for="" name="flex"> B </label>
+            </th>
+            <br />
+            <th>
+              <input type="radio" name="flex" id="3" />
+              <label for="" name="flex"> C </label>
+            </th>
+          </tr>
+        </table>
+        <br />
+        <button type="button" class="check" onclick="myFunction4()">
+          CHECK NOW
+        </button>
+        <p id="demo4"></p>
+      </div>
+    </div>
+     
+  <footer>
+    <p class="textfooter">Copyright &copy; 2029-www.BodyFlex.com- All rights reserved</p>
+  </footer>
+
+  
+    <script src="./js/check.js"></script>
+  </body>
+</html>

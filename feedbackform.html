@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/feedbackform.css" />
+  </head>
+  <body>
+
+    <nav   class="navbar background h-nav-res">
+      <div id="logo">
+        <img src=".//img/gymlog.png" alt="ERROR!">
+      </div>
+      <ul class="navlist v-class-res">
+        <li><a href="Homepage.html" >HOME</a> </li>
+        <li><a href="aboutus.html">ABOUT US</a> </li>
+        <li><a href="check.html">FITNESS CHECKUP</a> </li>
+        <li><a href="fitcalculator.html">FITNESS CALCULATOR</a> </li>
+        <li><a href="dietplan.html" blank>DIET PLAN </a></li>
+        <li><a href="contacts.html">CONTACT US </a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      
+    </nav><br>
+
+    <script src="./js/feedbackform.js"></script>
+    <div class="container">
+
+    <h1>FEEDBACK</h1>
+    <br /><br />
+
+      <form
+        method="post"
+        name="form"
+        onsubmit="return validate(this)"
+        action="./php/feedbackform.php"
+      >
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="-ENTER YOUR NAME-"
+        />
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="-ENTER YOUR E-MAIL-"
+        />
+
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="-SUBJECT-"
+        ></textarea>
+
+        <textarea
+          id="comments"
+          name="comments"
+          cols="30"
+          rows="5"
+          placeholder="-COMMENTS-"
+        ></textarea>
+        <br /><br /><br />
+        <button class="btn">Submit</button>
+      </form>
+
+    </div>
+
+    <footer>
+      <p class="textfooter">Copyright &copy; 2029-www.BodyFlex.com- All rights reserved</p>
+    </footer>
+    
+  </body>
+</html>

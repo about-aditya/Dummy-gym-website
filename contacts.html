@@ -1,0 +1,130 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT US</title>
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+ 
+  <nav class="navbar background h-nav-res">
+    <div id="logo">
+      <img src=".//img/gymlog.png" alt="ERROR!">
+    </div>
+    <ul class="navlist v-class-res">
+      <li><a href="Homepage.html">HOME</a> </li>
+      <li><a href="aboutus.html">ABOUT US</a> </li>
+      <li><a href="check.html">FITNESS CHECKUP</a> </li>
+      <li><a href="fitcalculator.html">FITNESS CALCULATOR</a> </li>
+      <li><a href="dietplan.html" blank>DIET PLAN </a></li>
+      <li><a href="contacts.html">CONTACT US </a></li>
+    </ul>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+  </nav>
+  <section class="main background1">
+    <span> CONTACT</span> BODYFLEX GYM<br>
+    <p id="second">WE'D LOVE TO HEAR FROM YOU</p>
+  </section>
+  <form action="./php/contacts.php" name="form" method="post"  onsubmit=" return validate(this)">
+  <section class="contact" >
+  
+    <div class="form" >
+      <select class="form-control error" name="contact_us" id="contact_usid" required="" aria-invalid="true">
+
+        <option value="" disable="disable">SELECT A DEPARTMENT</option>
+        <option value="sales">CORPORATE SALES</option>
+        <option value="marketing">Marketing </option>
+
+        <option value="franchise">INTERESTED IN A FRANCHISE</option>
+        <option value="customer_care">CUSTOMER CARE</option>
+        <option value="hr">HR</option>
+        <option value="it">IT</option>
+        <option value="advertise">ADVERTISE WITH GOLD'S GYM</option>
+        <option value="specific_gym">CONTACT A SPECIFIC GYM</option>
+        <option value="general">GENERAL</option>
+      </select>
+     
+      <input class="form-input" type="text" name="name" id="nameid" placeholder="ENTER YOUR NAME">
+      <input class="form-input" type="number" name="phone" id="phoneid" placeholder="ENTER YOUR CONTACT NUMBER">
+      <input class="form-input" type="email" name="email" id="emailid" placeholder="ENTER YOUR EMAIL_ID">
+      <textarea class="form-input" type="text" name="concern" id="textid" cols="30" rows="10"
+        placeholder="ELLABORATE YOUR CONCERN"></textarea>
+      <input type="submit" class="btn2" value="SUBMIT NOW">
+     
+      
+    </div>
+  </form>
+
+    <div class="about">
+      <span>GET IN TOUCH</span>
+      <p id="p1">WE ARE ALWAYS READY TO HEAR FROM YOU</p>
+      <p id="p2">OUR TEAM IS ALWAYS READY TO HEAR FROM YOU. WE MAKE IT A POINT TO RESPOND</p>
+      <p id="p3">WITHIN 24 HOURS ON WEEKDAYS AND 48 HOURS ON WEEKENDS.</p>
+      <img src="./img/about.jpg" alt="">
+    </div>
+
+  </section>
+
+  <footer class="foot">
+
+    <div class="address">
+      <img src="./img/location.jpg" alt=""><br><br>
+      <h3>HEAD OFFICE</h3><br><br>
+      <p>DHANTAK PLAZA, 203, 2ND FLOOR, MG-RD,</p><br>
+      <p>SOUTH-WEST, NEW DELHI - 110030 .</p>
+    </div>
+
+    <div class="call">
+      <img src="./img/mobile.png" alt="" aria-hidden="true"><br><br><br>
+      <h3>CALL US</h3><br>
+      <ul>
+        <li>+91-8976834831 </li>
+        <li>+91-9576270424 </li>
+        <li>+91-9874321546 </li>
+      </ul>
+    </div>
+
+
+    <div class="mail">
+      <img src="./img/mail.png" alt=""><br><br>
+      <h3>MAIL US</h3><br>
+      <ul>
+        <li>WeCare@BodyflexGym.in</li>
+        <li>WeCare@BodyflexGym.in</li>
+        <li>WeCare@BodyflexGym.in</li>
+      </ul>
+    </div>
+
+  </footer>
+
+  <script src="./js/contacts.js"></script>
+
+
+   
+  <footer>
+    <p class="textfooter">Copyright &copy; 2029-www.BodyFlex.com- All rights reserved</p>
+  </footer>
+
+  
+  <!-- <label class="rc-anchor-center-item rc-anchor-checkbox-label" aria-hidden="true" role="presentation"
+      id="recaptcha-anchor-label"><span aria-live="polite" aria-labelledby="recaptcha-accessible-status"></span>I'm not
+      a robot</label>
+  </section> -->
+
+  <!-- <div class="container">
+    <i class="fa fa-apple" id="apple"></i>
+    <i class="fa fa-twitter" id="twitter"></i>
+    <i class="fa fa-github-square github" id="github"></i>
+    <i class="fa fa-facebook-square" id="facebook"></i>
+  </div> -->
+</body>
+
+</html>

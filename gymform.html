@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/gymform.css" />
+  </head>
+  <body>
+    <script src="./js/gymform.js"></script>
+    
+    <nav   class="navbar background h-nav-res">
+      <div id="logo">
+        <img src=".//img/gymlog.png" alt="ERROR!">
+      </div>
+      <ul class="navlist v-class-res">
+        <li><a href="Homepage.html" >HOME</a> </li>
+        <li><a href="aboutus.html">ABOUT US</a> </li>
+        <li><a href="check.html">FITNESS CHECKUP</a> </li>
+        <li><a href="fitcalculator.html">FITNESS CALCULATOR</a> </li>
+        <li><a href="dietplan.html" blank>DIET PLAN </a></li>
+        <li><a href="contacts.html">CONTACT US </a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      
+    </nav>
+    <div class="container">
+      <h1>JOIN NOW</h1>
+      <h2>Enter your details and submit this form to join our gym.</h2>
+
+      <form
+        action="./php/gymform.php"
+        method="post"
+        name="form"
+        onsubmit="return validate(this)"
+      >
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+        />
+        <input type="text" name="age" id="age" placeholder="Enter your Age" />
+        <input
+          type="text"
+          name="gender"
+          id="gender"
+          placeholder="Enter your gender"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+        <input
+          type="phone"
+          name="phone"
+          id="phone"
+          placeholder="Enter your phone"
+        />
+        <textarea
+          name="address"
+          id="address"
+          cols="30"
+          rows="5"
+          placeholder="Address"
+        ></textarea>
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+
+    <footer>
+      <p class="textfooter">Copyright &copy; 2029-www.BodyFlex.com- All rights reserved</p>
+    </footer>
+    
+  </body>
+</html>
